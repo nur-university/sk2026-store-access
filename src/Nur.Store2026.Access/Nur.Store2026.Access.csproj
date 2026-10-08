@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -28,6 +28,10 @@
     <ProjectReference Include="$(MSBuildThisFileDirectory)..\Nur.Store2026.Access.Identity\Nur.Store2026.Access.Identity.csproj" Condition="Exists('$(MSBuildThisFileDirectory)..\Nur.Store2026.Access.Identity\Nur.Store2026.Access.Identity.csproj')" />
     <PackageReference Include="Nur.Store2025.Access.Inventory" Version="1.0.0" Condition="!Exists('$(MSBuildThisFileDirectory)..\Nur.Store2026.Access.Inventory\Nur.Store2026.Access.Inventory.csproj')" />
     <ProjectReference Include="$(MSBuildThisFileDirectory)..\Nur.Store2026.Access.Inventory\Nur.Store2026.Access.Inventory.csproj" Condition="Exists('$(MSBuildThisFileDirectory)..\Nur.Store2026.Access.Inventory\Nur.Store2026.Access.Inventory.csproj')" />
+    <PackageReference Include="Nur.Store2025.Access.Orders" Version="1.0.0" Condition="!Exists('$(MSBuildThisFileDirectory)..\Nur.Store2026.Access.Orders\Nur.Store2026.Access.Orders.csproj')" />
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\Nur.Store2026.Access.Orders\Nur.Store2026.Access.Orders.csproj" Condition="Exists('$(MSBuildThisFileDirectory)..\Nur.Store2026.Access.Orders\Nur.Store2026.Access.Orders.csproj')" />
+    <PackageReference Include="Nur.Store2025.Access.Payments" Version="1.0.0" Condition="!Exists('$(MSBuildThisFileDirectory)..\Nur.Store2026.Access.Payments\Nur.Store2026.Access.Payments.csproj')" />
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\Nur.Store2026.Access.Payments\Nur.Store2026.Access.Payments.csproj" Condition="Exists('$(MSBuildThisFileDirectory)..\Nur.Store2026.Access.Payments\Nur.Store2026.Access.Payments.csproj')" />
   </ItemGroup>
 
 </Project>

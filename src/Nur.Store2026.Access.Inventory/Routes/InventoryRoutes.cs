@@ -1,4 +1,4 @@
-﻿using Nur.Store2026.Access.Inventory.Permissions;
+using Nur.Store2026.Access.Inventory.Permissions;
 using Nur.Store2026.Access.Contracts;
 using System;
 using System.Collections.Generic;
@@ -15,6 +15,7 @@ public class InventoryRoutes
         new() { RouteTemplate = "/api/inventory/transaction", HttpMethod = "POST", RequiredScope = InventoryPermission.TransactionCreate },
         new() { RouteTemplate = "/api/inventory/transaction/complete", HttpMethod = "POST", RequiredScope = InventoryPermission.TransactionApprove },
         new() { RouteTemplate = "/api/inventory/transaction/reject", HttpMethod = "POST", RequiredScope = InventoryPermission.TransactionReject },
+        new() { RouteTemplate = "/api/inventory/transaction/orders/{orderId}/deliver", HttpMethod = "POST", RequiredScope = InventoryPermission.TransactionDeliver },
         new() { RouteTemplate = "/api/inventory/transaction/{id}", HttpMethod = "GET" }
 
         ];
