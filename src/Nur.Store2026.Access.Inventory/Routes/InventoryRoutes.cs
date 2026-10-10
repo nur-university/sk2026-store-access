@@ -16,6 +16,9 @@ public class InventoryRoutes
         new() { RouteTemplate = "/api/inventory/transaction/complete", HttpMethod = "POST", RequiredScope = InventoryPermission.TransactionApprove },
         new() { RouteTemplate = "/api/inventory/transaction/reject", HttpMethod = "POST", RequiredScope = InventoryPermission.TransactionReject },
         new() { RouteTemplate = "/api/inventory/transaction/orders/{orderId}/deliver", HttpMethod = "POST", RequiredScope = InventoryPermission.TransactionDeliver },
+        new() { RouteTemplate = "/api/inventory/transaction/pending-exits", HttpMethod = "GET", RequiredScope = InventoryPermission.TransactionDeliver },
+        new() { RouteTemplate = "/api/inventory/transaction/invoices/{invoiceNumber}", HttpMethod = "GET", RequiredScope = InventoryPermission.TransactionDeliver },
+        new() { RouteTemplate = "/api/inventory/transaction/invoices/{invoiceNumber}/deliver", HttpMethod = "POST", RequiredScope = InventoryPermission.TransactionDeliver },
         new() { RouteTemplate = "/api/inventory/transaction/{id}", HttpMethod = "GET" }
 
         ];

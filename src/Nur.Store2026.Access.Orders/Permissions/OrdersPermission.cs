@@ -14,11 +14,15 @@ public class OrdersPermission
     /// <summary>See and cancel the sales notes of every advisor, not only the own ones (supervisor).</summary>
     public const string OrderAdmin = "orders.order:admin";
 
+    /// <summary>Annul a paid sale whose goods nobody picked up (manual intervention of a supervisor).</summary>
+    public const string OrderOverride = "orders.order:override";
+
     public static readonly IEnumerable<string> PermissionsList =
         [
             OrderCreate,
             OrderRead,
             OrderCancel,
-            OrderAdmin
+            OrderAdmin,
+            OrderOverride
         ];
 }
