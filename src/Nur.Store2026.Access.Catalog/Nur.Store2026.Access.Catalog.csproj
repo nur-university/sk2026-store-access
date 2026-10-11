@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Nur.Store2025.Access.Contracts" Version="1.0.0" Condition="!Exists('$(MSBuildThisFileDirectory)..\Nur.Store2026.Access.Contracts\Nur.Store2026.Access.Contracts.csproj')" />
+    <PackageReference Include="Nur.Store2026.Access.Contracts" Version="1.0.0" Condition="!Exists('$(MSBuildThisFileDirectory)..\Nur.Store2026.Access.Contracts\Nur.Store2026.Access.Contracts.csproj')" />
     <ProjectReference Include="$(MSBuildThisFileDirectory)..\Nur.Store2026.Access.Contracts\Nur.Store2026.Access.Contracts.csproj" Condition="Exists('$(MSBuildThisFileDirectory)..\Nur.Store2026.Access.Contracts\Nur.Store2026.Access.Contracts.csproj')" />
   </ItemGroup>
 </Project>
